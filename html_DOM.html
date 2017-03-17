@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta  charset="utf-8">
+	<meta http-equiv="" content="IE=edge">  <!--http-equiv向浏览器传回的信息-->
+	<meta name="viewport" content="width=device-width,initial-scale=1"> <!--定义页面宽度和页面宽度与设备屏幕宽度的关系-->
+	<meta name="keword" content="html_DOM"> <!--keyword用来标记页面的关键字，便于搜索-->
+	<meta name="description" content="了解html各个标签的使用方法">  <!--description用来描述页面的详细信息-->
+	<title>hack_week 任务二</title>  <!--显示在选项卡的的页面标题-->
+	<link rel="stylesheet" type="text/css" href="css/all.css">  <!--常用来css文件或icon-->
+<!-- script标签常链接在页面底部-->
+</head>
+
+<body>
+	<header>
+	<h1><span>logo</span>
+		<img src="img/3.jpg" alt="logo"/>
+	</h1> 		<!--h1标签常用于网站名称或LOGO-->
+	<nav id="nav">    <!--导航栏-->
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">编程语言</a></li>
+			<li><a href="#">我的</a></li>
+			<li><a href="#">商业合作</a></li>
+			<li><a href="#">关于我们</a></li>
+		</ul>
+	</nav>
+	</header>
+	<div id="user">
+	<form method="post" action="save.php" id="userinfo">	
+	<!--methon数据传送方式 action表单数据传输到的地方-->	
+		<fieldset>
+		<table id="align">
+		<tbody>
+	 		<tr>
+	 			<td><label for="username">用户名：</label></td>   	
+	 			<!--for与控件ID名相关联，当单击该label标签时，会将焦点转到和标签相关的表单控件上-->
+				<td><input type="text" name="name" id="username" value="" placeholder="请输入你的用户名"/></td>
+				<!--name:为文本框命名，以备后台程序ASP,PHP使用。value：为文本输入框设置默认值。(提示作用).placehoder-->	
+			</tr>
+			<tr>
+				<td><label for="psw">密码：</label></td>
+				<td><input type="password" name="psw" id="psw" value="" placeholder="请输入你的密码"/></td>
+			</tr>
+			<tr>
+				<td><label for="personal">个人简介：</label></td> 
+				<td><textarea rows="4" cols="25" id="personal" name="personal" placeholder="在这里输入个人介绍哦~"></textarea></td>
+				<!--textarea标签语义化，rows为行数，col为每行个数-->
+			</tr>
+			<tr>
+				<td><label>性别：</label></td>
+ 				<td><input type="radio" checked="checked" name="sex" value="男"/>男
+ 					<input type="radio" name="sex" value="女"/>女</td>
+ 					<!--同一组单选框name值一定要一致-->
+ 			</tr>
+ 			<tr>
+ 				<td><label>编程语言：</label></td>
+ 				<td><input type="checkbox" name="program" value="java"/>java
+ 				<input type="checkbox" name="program" value="c++"/>c++
+ 				<input type="checkbox" name="program" value="php"/>php
+ 				<input type="checkbox" name="program" value="python"/>python</td>
+ 			</tr>
+ 			<tr>
+ 				<td><label for="active">活动：</label></td>
+ 				<td><select id="active" name="active" value="活动">
+ 					<option>小程序</option>
+ 					<option>网站开发</option>
+ 					<option>网站建设</option>
+ 					<option>微信公众号</option>
+ 					</select></td>
+ 			</tr>
+ 			<tr>
+ 				<td></td>
+ 				<td><input type="file" name="pic" accept="img/gif"></td>
+ 				<!-- 选择文件 value值显示在按钮上-->
+ 			<tr>
+ 				<td><input type="reset" name="reset" value="重置"/></td>      
+				<td><input type="submit" name="submit"  value="提交"/></td>
+			</tr>
+		</tbody>
+		</table>
+		</fieldset>	
+	</form>	
+	</div>
+	<div id="content">
+	<main>
+		<article>
+			<h3>为什么要学网站开发</h3>
+			<h2><span>yeah叶<time>3/10/2017</time></span></h2>    <!-- time语义化-->
+			<ol>
+				<li>职场人士必学基础技能</li>
+				<li>技术爱好者入门首选</li>
+				<li>UI.UX设计师基础技能</li>
+				<li>产品经理/创业者需掌握的入门技能</li>
+			</ol>
+			<h3>为什么要参加hack_week活动？</h3>
+				<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.
+				<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.</p>
+				<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.<span>技术是群体创造，欢乐而有趣的社交活动。</span></p>  
+   				<!--页面的文本内容写在p标签，span标签无语义，它的作用就是设置单独的样式-->
+				<blockquote>Everbody in this country should learn how to propram a computer because it teaches you how to think.<br/>
+				<strong>我们国家的每一个人都应该学一点编程，因为它会教会你如何思考！</strong> 
+				</blockquote> 
+				<!--blockquote长引用。断开段落后缩进； q标签短引用。在现有段落用斜体显示-->
+				<!--strong标签用于强调，比em标签更为常见-->
+			</article>
+			<article id="table">
+				<table>
+				<tbody>     <!-- 控制表格分行下载-->
+					<caption>线上交流时间表</caption> <!--表格标题-->
+					<tr>
+						<th>日期</th>  <!--表头-->
+						<th>学习内容</th>
+						<th>交流时间</th>
+					</tr>
+					<tr>
+						<td>周一</td>
+						<td>开发环境的搭建</td>
+						<td>20:00-21:30</td>
+					</tr>
+					<tr>
+           				<td>周二</td>
+            			<td>HTML基础知识</td>
+            			<td>20:30-21:30</td>
+        			</tr>
+       				<tr>
+            			<td>周三</td>
+            			<td>CSS基础知识</td>
+            			<td>20:30-21:30</td>
+        			</tr>
+       	 			<tr>
+            			<td>周四</td>
+            			<td>学习并理解Bootstrap</td>
+            			<td>20:30-21:30</td>
+        			</tr>
+        			<tr>
+            			<td>周五</td>
+            			<td>引入开源项目</td>
+            			<td>20:30-21:30</td>
+        			</tr>
+        			<tr>
+            			<td>周六</td>
+            			<td>网页初步设计</td>
+            			<td>20:30-21:30</td>
+        			</tr>
+				</tbody>
+				</table>
+			</article>
+			<section id="smile_wall" class="clearfix">
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/1.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/2.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/3.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/4.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/1.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/2.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/3.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			<div class="img">
+				<p>好看的图片</p>
+				<img src="img/4.jpg" title="笑脸墙" alt="笑脸墙"/>
+			</div>
+			</section>
+		</main>
+	</div>		
+	<footer>
+		<address>中国 广东 深圳 叶yeah 版权所有&copy<br/>
+		<a href="mailto:yeyeahyet@163.com">联系叶yeah</a></address>
+	</footer>
+</body>
+</html>
