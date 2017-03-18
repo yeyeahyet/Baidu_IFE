@@ -1,0 +1,69 @@
+@charset="utf-8";
+
+/*--------------------------------------公用样式开始------------------------------------------*/
+*{	padding: 0;
+	margin: 0;
+}
+#container{
+	width: : 980px;
+	height: 1386px;
+	padding: 0px 20px;
+}
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after: {
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+
+/*--------------------------------header 开始---------------------------------------------*/
+header{
+	position: relative;
+	width: 892px;
+}
+#logo{
+	width: 110px;
+	height: 61px;
+	background-color: #d45d5c;
+	position: relative;	
+}
+#logo>p{
+	font-size: 12px;
+	font-family: "SimHei";
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+}
+header>time{
+	font-size: 12px;
+	font-family: "SimHei";
+	color: #d45d5c;
+	position: absolute;
+	right: 0px;
+	bottom: 10px;
+}
+header>hr{
+	width: 892px;
+	height: 2px;
+	color: #938e8c;
+}
+
+/*-------------------------------------article-1 开始-----------------------------------*/
+#float-right{
+	width: 203px;
+}
+#float-right>hr{
+	width:203px;
+	height: 2px;
+	color: #cc8091;
+}
+#float>h1{
+	font-size: 24px;
+	font-family: "Micosoft YaHei";
+	color: #000;
+	text-decoration: underline;
+}
