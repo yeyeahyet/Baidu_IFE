@@ -1,0 +1,76 @@
+/*不推荐用position来布局整个页面的大框架，float布局更为灵活。*/
+/*float用于整个大框架布局，position用来调整位置。*/
+/*margin padding 值只选一个设置。保持方向一致*/
+#container{
+	background-color: #eee;
+	border: 1px #999 solid;
+	margin:0 auto;
+	min-height: 500px;   /*解决浏览器过度缩小的问题*/
+	min-width: 820px;
+}
+#logo{
+	border: 1px #999 solid;
+	width: 200px;
+	margin: 20px;
+	background-color: #fff;
+	float: left;    	/*浮动在父容器设置,(不在子元素设置防止父容器坍塌）*/
+}
+#logo img{
+	width: 80px;
+	height: 80px;
+	border: 1px #999 solid;	
+	margin: 20px;
+}
+h1{
+	margin: 0; 			 /*将默认样式取消*/
+	padding: 0;
+}
+#logo h1{
+	font-size: 16px;     /*将p元素改为h1，修改字体大小*/
+	display: inline-block;
+	position: relative;
+	top: 20px;
+}
+p{
+	margin: 0;          /*将默认样式取消,防止默认的间距影响布局*/
+	padding: 0;
+}
+#content{
+	border: 1px #999 solid;
+	padding: 20px;
+	margin:20px 160px 20px 240px;
+	background-color: #fff;
+}
+#sidebar{
+	width: 120px;
+	margin: 20px;
+	border: 1px #999 solid;
+	float: right; 			 /*浮动元素会脱离文本流，所以要放在前面*/
+	background-color: #fff;
+}
+li{
+	padding: 0;
+	margin: 0;
+}
+#sidebar li{
+	list-style: none;
+	margin-bottom: 20px;
+	position: relative;     /*设置相对位置*/
+	right: 20px;
+}
+#sidebar img{
+	width: 80px;
+	height: 80px;
+	border: 1px #999 solid;
+
+}
+.clearfix:before,.clearfix:after{   /*在父容器中添加类clearfix，清除浮动*/
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}

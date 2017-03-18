@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#square{
+	width: 400px;
+	height: 200px;
+	background-color: #ccc;
+	margin: 0px auto;     	/*水平居中在块级元素定宽的情况下使用*/
+	position: absolute;     
+	right: 0;     /*水平居中*/
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}	
+
+.circle{ 		 /*画圆先画矩形，再用border-radius属性*/
+	width: 50px;
+	height: 50px;
+	background-color: #fc0;
+}
+.top-left{     
+	border-bottom-right-radius:50px;
+	position: absolute;		/*相对于父元素定位*/
+	top: 0;   
+}
+.bottom-right{     /*画圆先画矩形，再用border-radius属性*/
+	border-top-left-radius:50px;
+	position: absolute;       /*至少有一个父元素为absolute定位，否则参考坐标为页面*/  
+	left: 350px;
+	bottom: 0px;
+	}

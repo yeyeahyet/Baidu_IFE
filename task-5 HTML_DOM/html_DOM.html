@@ -13,24 +13,23 @@
 
 <body>
 	<header>
-	<h1><span>logo</span>
+	<h1>                <!--h1标签常用于网站名称或LOGO-->
+		<span>logo</span>
 		<img src="img/3.jpg" alt="logo"/>
-	</h1> 		<!--h1标签常用于网站名称或LOGO-->
-	<nav id="nav">    <!--导航栏-->
+	</h1> 		
+	<nav id="nav">
 		<ul>
-			<li><a href="#">首页</a></li>
-			<li><a href="#">编程语言</a></li>
-			<li><a href="#">我的</a></li>
-			<li><a href="#">商业合作</a></li>
-			<li><a href="#">关于我们</a></li>
+			<li><a href="www.github/yeyeahyet">网站链接一</a></li>
+			<li><a href="www.github/yeyeahyet">网站链接二</a></li>
+			<li><a href="www.github/yeyeahyet">网站链接三</a></li>
 		</ul>
 	</nav>
 	</header>
-	<div id="user">
+	<div id="sidebar" class="clearfix">
 	<form method="post" action="save.php" id="userinfo">	
 	<!--methon数据传送方式 action表单数据传输到的地方-->	
 		<fieldset>
-		<table id="align">
+		<table id="userinfo">
 		<tbody>
 	 		<tr>
 	 			<td><label for="username">用户名：</label></td>   	
@@ -44,7 +43,7 @@
 			</tr>
 			<tr>
 				<td><label for="personal">个人简介：</label></td> 
-				<td><textarea rows="4" cols="25" id="personal" name="personal" placeholder="在这里输入个人介绍哦~"></textarea></td>
+				<td><textarea rows="4" cols="24" id="personal" name="personal" placeholder="在这里输入个人介绍哦~"></textarea></td>
 				<!--textarea标签语义化，rows为行数，col为每行个数-->
 			</tr>
 			<tr>
@@ -56,9 +55,9 @@
  			<tr>
  				<td><label>编程语言：</label></td>
  				<td><input type="checkbox" name="program" value="java"/>java
- 				<input type="checkbox" name="program" value="c++"/>c++
- 				<input type="checkbox" name="program" value="php"/>php
- 				<input type="checkbox" name="program" value="python"/>python</td>
+ 					<input type="checkbox" name="program" value="c++"/>c++
+ 					<input type="checkbox" name="program" value="php"/>php
+ 					<input type="checkbox" name="program" value="python"/>python</td>
  			</tr>
  			<tr>
  				<td><label for="active">活动：</label></td>
@@ -73,6 +72,7 @@
  				<td></td>
  				<td><input type="file" name="pic" accept="img/gif"></td>
  				<!-- 选择文件 value值显示在按钮上-->
+ 			</tr>
  			<tr>
  				<td><input type="reset" name="reset" value="重置"/></td>      
 				<td><input type="submit" name="submit"  value="提交"/></td>
@@ -84,9 +84,11 @@
 	</div>
 	<div id="content">
 	<main>
-		<article>
-			<h3>为什么要学网站开发</h3>
-			<h2><span>yeah叶<time>3/10/2017</time></span></h2>    <!-- time语义化-->
+		<article id="article_1">
+			<h3>为什么要学网页开发</h3>
+			<h4>
+				<span class="name">yeah叶 &nbsp&nbsp&nbsp<time>3/10/2017</time></span>          <!-- time语义化-->
+			</h4>   
 			<ol>
 				<li>职场人士必学基础技能</li>
 				<li>技术爱好者入门首选</li>
@@ -96,16 +98,16 @@
 			<h3>为什么要参加hack_week活动？</h3>
 				<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.
 				<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.</p>
-				<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式（视频+图文介绍+案例+任务性的实战+随时答疑+能够有监督促学机制+线下分组做出产品+活动后长期辅导）让每个人能够享受技术创造所带来的乐趣.<span>技术是群体创造，欢乐而有趣的社交活动。</span></p>  
+				<p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。让每个人能够享受技术创造所带来的乐趣.<span>技术是群体创造，欢乐而有趣的社交活动。</span></p>  
    				<!--页面的文本内容写在p标签，span标签无语义，它的作用就是设置单独的样式-->
-				<blockquote>Everbody in this country should learn how to propram a computer because it teaches you how to think.<br/>
+				<blockquote>Everbody in this country should learn how to propram a computer because it teaches you how to think.Everbody in this country should learn how to propram a computer because it teaches you how to think.<br/>
 				<strong>我们国家的每一个人都应该学一点编程，因为它会教会你如何思考！</strong> 
 				</blockquote> 
 				<!--blockquote长引用。断开段落后缩进； q标签短引用。在现有段落用斜体显示-->
 				<!--strong标签用于强调，比em标签更为常见-->
-			</article>
-			<article id="table">
-				<table>
+		</article>
+			<article id="article_2">
+				<table id="table">
 				<tbody>     <!-- 控制表格分行下载-->
 					<caption>线上交流时间表</caption> <!--表格标题-->
 					<tr>
@@ -113,7 +115,7 @@
 						<th>学习内容</th>
 						<th>交流时间</th>
 					</tr>
-					<tr>
+					<tr id="gap">
 						<td>周一</td>
 						<td>开发环境的搭建</td>
 						<td>20:00-21:30</td>
@@ -123,7 +125,7 @@
             			<td>HTML基础知识</td>
             			<td>20:30-21:30</td>
         			</tr>
-       				<tr>
+       				<tr id="gap">
             			<td>周三</td>
             			<td>CSS基础知识</td>
             			<td>20:30-21:30</td>
@@ -133,7 +135,7 @@
             			<td>学习并理解Bootstrap</td>
             			<td>20:30-21:30</td>
         			</tr>
-        			<tr>
+        			<tr id="gap">
             			<td>周五</td>
             			<td>引入开源项目</td>
             			<td>20:30-21:30</td>

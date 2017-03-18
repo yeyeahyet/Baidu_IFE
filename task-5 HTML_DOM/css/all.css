@@ -1,0 +1,156 @@
+/*公用样式*/
+@charset"utf-8";
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Micosoft YaHei";
+}
+/* header 开始*/
+header{
+	background-color: #d45d5c;
+	height: 60px;
+	position: relative;
+}
+header span{
+	font-size: 24px;
+	line-height: 60px;
+	color: #fff;
+	position: relative;
+	left: 80px;
+}
+header img{
+	position: relative;              
+	top: 10px;
+	left: -42px;
+	width: 40px;
+	height: 40px;
+}
+/*导航链接*/
+h1{
+	float: left;
+}
+#nav ul{               			/*ul去边距和样式*/
+	list-style:none;
+	overflow: hidden;
+}
+#nav li{
+	float: right;
+}
+#nav a{
+	display:block;
+	margin-left: 20px;
+	line-height: 60px;
+	font-weight: bold;
+}
+#nav a:link,#nav a:visited{
+	color: #004d5c;
+	
+}
+#nav a:hover,#nav a:active{
+	color: pink;
+}
+
+/*article 1 开始*/
+#content{
+	margin-right: 418px;
+}
+#article_1{
+	border: 1px solid #000;
+	margin: 20px;
+	padding: 20px;
+}
+.name{
+	color: #aaa;
+	font-size: 16px;
+}
+p{
+	text-indent: 1cm;
+}
+p>span{
+	color: #d00;
+}
+blockquote{
+	color: #555;
+	font-style: oblique;
+}
+
+/*article_2 table开始*/
+#article_2{
+	border: 1px solid #000;
+	margin: 20px;
+	padding: 20px;
+}
+#table{
+	width: 400px;
+}
+#table caption{
+	color: #000;
+}
+#table>th,td{
+	border: 1px solid ;
+	color:#fff;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+#table th{
+	background-color: #d00;
+}
+#table td{
+	background-color: #d45d5c;
+}
+#gap>td{
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #d45d5c;
+}
+
+/*section开始*/
+#smile_wall{
+		border: 1px solid #000;
+		margin: 20px;
+}
+.img {	
+	display: inline-block;
+	float: left;
+	margin: 20px;
+	border: 1px solid #d00;
+}
+.img>p{
+	text-align: center;
+	font-size: 16px;
+}
+#smile_wall img{
+	width: 280px;
+	height: 200px;
+	margin: 15px;
+}
+.clearfix:before,.clearfix:after{
+	content:"";
+	display:table ;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+
+/*侧边栏 开始*/
+#sidebar{
+	float: right;
+	border: 1px solid;
+	padding:20px;
+	margin-top: 20px;
+}
+#userinfo td{
+	color: #000;
+	text-align: left;
+	border: 0px;
+	width: 100px;
+}
+
+/*foot 开始*/
+footer{
+	text-align: center;
+}
