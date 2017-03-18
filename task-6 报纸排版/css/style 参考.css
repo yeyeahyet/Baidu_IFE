@@ -86,9 +86,11 @@ header>div>p{
 }
 .technologe-title{
 	font-family: "Microsoft YaHei";
-	font-variant: small-caps;
 	font-size: 24px;
 	text-decoration:underline;
+	text-transform: capitalize;    /*首字母大写*/
+	font-variant: small-caps;        /*小写字母缩小显示*/
+	border-top:2px #cc8091; 
 }
 #p-1{
 	font-size: 12px;
