@@ -106,41 +106,55 @@ header>hr{                   /*画出实线水平线并改变颜色*/
 	font-size: 12px;
 }
 
-/*-------------------------------------article-1 左侧开始------------------------*/
+/*-------------------------------------article-1 左侧图片开始------------------------*/
 #hover{
 	width: 641px;
+}
+#left-layer{
+	float: left;
+	width: 192px;
+	height: 301px;
+	background-color: #98FB98;
+}
+#right-layer{
+	float: right;
+	width: 192px;
+	height: 301px;
+	background-color: #BA6965;
 }
 img{
 	width: 641px;
 	height: 301px;
 }
-#hover span{
-	display: inline-block;
-	width: 190px;
-	margin-right: 20px; 
-}
+/*-------------------------------------article-1 左侧文字开始------------------------*/
 #hover h3{
 	font-size: 16px;
 	text-decoration: underline;
+	font-weight: bold;
 	text-transform: capitalize;
 }
-.what{
+.what h3{
 	color: #418c59;
 }
-.when{
+.when h3{
 	color: #d2994f;
 }
-.how{
+.how h3{
 	color: #cc7680;
 }
-#hover span>p{
+.what,.when,.how{
+	float: left;
+	margin-right: 20px;
+	width: 190px;
+}
+#hover p{
 	font-size: 12px;
 	line-height: 16px;
 	color: #231815;
 	font-family: "Microsoft YaHei";
 	opacity: 0.7;
 }
-.how>span{
+.how span{
 	color: #cd4a48;
 	opacity: 0.7;
 }
